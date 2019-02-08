@@ -1,0 +1,25 @@
+{
+    "name": "wiry/server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Pitt",
+            "email": "cgpitt@gmail.com"
+        }
+    ],
+    "scripts": {
+        "serve": "@php -S 127.0.0.1:8000 -t ./examples"
+    },
+    "require": {
+        "ramsey/uuid": "^3.8",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wiry\\": "source"
+        }
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
