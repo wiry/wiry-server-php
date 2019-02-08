@@ -71,9 +71,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (isset($_GET["{$namespace}-session"])) {
         $session = $_GET["{$namespace}-session"];
+        $server->setSession($session);
     }
-
-    $server->setSession($session);
 
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Headers: *");
